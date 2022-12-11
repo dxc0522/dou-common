@@ -1,0 +1,116 @@
+/* flex */
+.dis_f {
+	display: flex;
+}
+.dis_inf {
+	display: inline-flex;
+}
+/* 主轴 */
+.ali_top {
+	align-items: flex-start;
+	-webkit-align-items: flex-start;
+}
+.ali_ct {
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+.ali_end {
+	align-items: flex-end;
+	-webkit-align-items: flex-end;
+}
+
+.ali_st {
+	align-items: stretch;
+}
+
+.ali_bl {
+	align-items: baseline;
+}
+/* 侧轴 */
+
+.jus_lt {
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+
+.jus_ct {
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+
+.jus_rt {
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+}
+
+.jus_bt {
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+
+.jus_cen {
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+}
+
+/* 多主轴对齐方式 */
+.alicon_top {
+	align-content: flex-start;
+	-webkit-align-content: flex-start;
+}
+.alicon_ct {
+	align-content: center;
+	-webkit-align-content: center;
+}
+
+.alicon_end {
+	align-content: flex-end;
+	-webkit-align-content: flex-end;
+}
+
+.alicon_st {
+	align-content: stretch;
+	-webkit-align-content: stretch;
+}
+
+.alicon_bt {
+	align-content: space-between;
+	-webkit-align-content: space-between;
+}
+.alicon_cen {
+	align-content: space-around;
+	-webkit-align-content: space-around;
+}
+/* 溢出排列方式 */
+.flw_w {
+	flex-wrap: wrap;
+}
+.flw_wr {
+	flex-wrap: wrap-reverse;
+}
+
+/* 主轴方向 */
+.fle_t {
+	flex-direction: column;
+}
+.fle_b {
+	flex-direction: column-reverse;
+}
+.fle_r {
+	flex-direction: row-reverse;
+}
+/* 不缩放 */
+.fle_no {
+	flex-shrink: 0;
+}
+/* grow占比 */
+.fl1 {
+	flex: 1;
+}
+.fl2 {
+	flex: 2;
+}
+.fl3 {
+	flex: 3;
+}

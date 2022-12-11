@@ -1,0 +1,77 @@
+// 字体
+@for $i from 1 through 17 {
+	.f#{$i*2 + 16} {
+		font-size: $i * 2 + 16upx;
+	}
+}
+// 边距
+@for $i from 1 through 3 {
+	.mt-#{$i * 10} {
+		margin-top: $i * 10upx;
+	}
+	.mb-#{$i * 10} {
+		margin-bottom: $i * 10upx;
+	}
+	.ml-#{$i * 10} {
+		margin-left: $i * 10upx;
+	}
+	.mr-#{$i * 10} {
+		margin-right: $i * 10upx;
+	}
+	.pt-#{$i * 10} {
+		padding-top: $i * 10upx;
+	}
+	.pb-#{$i * 10} {
+		padding-bottom: $i * 10upx;
+	}
+	.pl-#{$i * 10} {
+		padding-left: $i * 10upx;
+	}
+	.pr-#{$i * 10} {
+		padding-right: $i * 10upx;
+	}
+	.c#{$i * 333} {
+		color: ##{$i * 333};
+	}
+}
+
+
+.fwb {
+	font-weight: 600;
+}
+
+.w100 {
+	width: 100%;
+}
+
+.h100 {
+	height: 100%;
+}
+
+.lh100 {
+	line-height: 100%;
+}
+
+.wh100 {
+	width: 100%;
+	height: 100%;
+}
+
+.ov {
+	overflow: hidden;
+}
+
+.txo {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	/*不换行*/
+}
+
+.poa {
+	position: absolute;
+}
+
+.por {
+	position: relative;
+}

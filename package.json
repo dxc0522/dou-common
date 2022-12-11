@@ -1,0 +1,36 @@
+{
+	"name": "dou-common",
+	"version": "1.0.0",
+	"description": "my project common utils",
+	"main": "index.js",
+	"scripts": {
+		"lib:test": "webpack --config ./build/webpack.common.js",
+		"lib:prod": "webpack --config ./build/webpack.common.js",
+		"lib:pub": "npm run lib:prod && npm pub"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dxc0522/dou-common.git"
+	},
+	"keywords": [
+		"util"
+	],
+	"author": "dou",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/dxc0522/dou-common/issues"
+	},
+	"homepage": "https://github.com/dxc0522/dou-common#readme",
+	"devDependencies": {
+		"chalk": "2.4.2",
+		"clean-webpack-plugin": "^4.0.0",
+		"css-loader": "^6.7.2",
+		"mini-css-extract-plugin": "^2.7.2",
+		"progress-bar-webpack-plugin": "^2.1.0",
+		"sass": "^1.56.2",
+		"sass-loader": "^13.2.0",
+		"style-loader": "^3.3.1",
+		"webpack": "^5.75.0",
+		"webpack-cli": "^5.0.1"
+	}
+}
