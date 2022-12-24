@@ -15,7 +15,9 @@ const NODE_ENV = process.env.NODE_ENV
 console.log('entryList', entryList)
 const webpackConfig = {
     mode: 'production',
-    entry: entryList,
+    entry: {
+        'css/base': '@/css/base.css',
+    },
     output: {
         path: path.resolve(process.cwd(), './dist'),
         chunkFilename: '[id].js',
@@ -40,8 +42,8 @@ const webpackConfig = {
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                test: /\.css$/i,
+                use: [MiniCssExtractPlugin.loader, 'css-loader']
             },
             {
                 test: /\.s[ac]ss$/i,
